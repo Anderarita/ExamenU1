@@ -1,12 +1,15 @@
 import { StyleSheet, View } from "react-native";
-import PruebaScreen from "./src/presentation/Screens/PruebaScreen";
+import TemperaturaScreen from "./src/presentation/Screens/TemperaturaScreen";
+import HexadecimalesScreen from "./src/presentation/Screens/HexadecimalesScreen";
+
 
 
 
 function App(): React.JSX.Element {
   return (
     <View style={style.container}>
-      <PruebaScreen/>
+      {/*<TemperaturaScreen/>*/}
+      <HexadecimalesScreen/>
     </View>
   );
 }
@@ -14,9 +17,6 @@ function App(): React.JSX.Element {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'white'
   }
 })
 
