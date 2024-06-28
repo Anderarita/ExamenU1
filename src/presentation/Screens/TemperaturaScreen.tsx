@@ -24,6 +24,7 @@ const TemperaturaScreen = () => {
 
     return (
         <View style={styles.container}>
+            <Text style={styles.header}>Temperatura App</Text>
             <Text style={[styles.temperature, { color: getTemperatureColor() }]}>
                 {temperature}
             </Text>
@@ -39,7 +40,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+    },
+    header: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
     },
     temperature: {
         fontSize: 100,
