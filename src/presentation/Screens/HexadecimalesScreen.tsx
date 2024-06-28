@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Button, StyleSheet } from 'react-native';
+import { styles } from '../../config/app-theme';
 
 function HexadecimalesScreen() {
     const [color, setColor] = useState('');
@@ -20,12 +21,5 @@ function HexadecimalesScreen() {
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-});
 
 export default HexadecimalesScreen;

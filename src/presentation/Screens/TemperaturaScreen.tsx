@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import { styles } from '../../config/themeTemperatura';
 
 const TemperaturaScreen = () => {
     const [temperature, setTemperature] = useState(20);
@@ -35,29 +36,5 @@ const TemperaturaScreen = () => {
         </View>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    header: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        marginBottom: 20,
-    },
-    temperature: {
-        fontSize: 100,
-        fontWeight: 'bold',
-    },
-    buttonContainer: {
-        flexDirection: 'row',
-        marginTop: 10,
-        padding: 36,
-        justifyContent: 'space-between', 
-        width: '50%',
-    },
-});
 
 export default TemperaturaScreen;
