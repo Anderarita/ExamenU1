@@ -1,27 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { styles } from '../../config/themeTemperatura';
+import { useTemperatura } from '../hooks/useTemperatura';
 
 const TemperaturaScreen = () => {
-    const [temperature, setTemperature] = useState(20);
-
-    const increaseTemperature = () => {
-        setTemperature(temperature + 1);
-    };
-
-    const decreaseTemperature = () => {
-        setTemperature(temperature - 1);
-    };
-
-    const getTemperatureColor = () => {
-        if (temperature < 15) {
-            return 'blue';
-        } else if (temperature >= 15 && temperature <= 25) {
-            return 'green';
-        } else {
-            return 'red';
-        }
-    };
+    
+    const { temperature, increaseTemperature, decreaseTemperature, getTemperatureColor } = useTemperatura();
 
     return (
         <View style={styles.container}>
