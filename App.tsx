@@ -8,8 +8,8 @@ import HexadecimalesScreen from "./src/presentation/Screens/HexadecimalesScreen"
 function App(): React.JSX.Element {
   return (
     <View style={style.container}>
-      <TemperaturaScreen/>
-      {/*<HexadecimalesScreen/>*/}
+      {/*<TemperaturaScreen/>*/}
+      <HexadecimalesScreen/>
     </View>
   );
 }

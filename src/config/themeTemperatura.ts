@@ -22,6 +22,7 @@ export const styles = StyleSheet.create({
         margin: 100,
         justifyContent: 'space-between', 
         width: '50%',
+        
     },
     buttontext:{
         fontSize: 20,

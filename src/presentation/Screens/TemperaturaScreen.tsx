@@ -30,7 +30,7 @@ const TemperaturaScreen = () => {
                 {temperature}
             </Text>
             <View style={styles.buttonContainer}>
-                <Button title="+" onPress={increaseTemperature} />
+                <Button title="+" onPress={increaseTemperature}/>
                 <Button title="-" onPress={decreaseTemperature} />
             </View>
         </View>
